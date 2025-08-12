@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsa Cultura: IGNITION - Event Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Teko:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Energetic & Playful -->
+    <!-- Application Structure Plan: A top-down, single-column infographic layout designed for linear storytelling. It starts with a bold headline, presents key objectives as standout stats, uses a clear timeline for the schedule, visualizes revenue with a donut chart, and organizes packages and partners into clean cards. This structure is chosen for maximum readability and impact, guiding the viewer through the most critical data points of the event plan in a digestible format. -->
+    <!-- Visualization & Content Choices: Report Info: Core Objectives -> Goal: Inform -> Viz: Large Number Stats -> Justification: Immediately grabs attention and conveys key goals. Report Info: Event Schedule -> Goal: Show Change -> Viz: Vertical Timeline (HTML/CSS) -> Justification: Clearly shows the flow of the event from start to finish. Report Info: Revenue Strategy -> Goal: Compare/Show Composition -> Viz: Donut Chart (Chart.js) -> Justification: Instantly communicates the contribution of each revenue stream to the total. Report Info: Guest Packages -> Goal: Organize/Compare -> Viz: Styled Cards (HTML/CSS) -> Justification: Allows for easy comparison of features and pricing. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0B0C10;
+            color: #C5C6C7;
+        }
+        .font-teko { font-family: 'Teko', sans-serif; }
+        .font-roboto-condensed { font-family: 'Roboto Condensed', sans-serif; }
+        .brand-cyan { color: #66FCF1; }
+        .brand-teal { color: #45A29E; }
+        .border-cyan { border-color: #66FCF1; }
+        .bg-dark-navy { background-color: #1F2833; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+
+        <!-- Header -->
+        <header class="text-center mb-16 border-b-4 border-cyan pb-8">
+            <h1 class="font-teko text-7xl md:text-9xl tracking-wider brand-cyan">IGNITION</h1>
+            <p class="font-roboto-condensed text-2xl md:text-3xl tracking-widest text-white">A DESERT OASIS OF INTERNAL COMBUSTION</p>
+            <p class="mt-2 text-lg brand-teal">AN INAUGURAL EVENT BY CORSA CULTURA</p>
+        </header>
+
+        <!-- Key Objectives Section -->
+        <section class="mb-20">
+            <h2 class="font-roboto-condensed text-4xl text-center mb-10 text-white tracking-wider">CORE OBJECTIVES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-dark-navy p-6 rounded-lg">
+                    <p class="font-teko text-6xl brand-cyan">01</p>
+                    <h3 class="font-roboto-condensed text-2xl mt-2 text-white">BRAND LAUNCH</h3>
+                    <p class="mt-2 text-sm">Introduce Corsa & Cultura to a wider audience and establish our unapologetic ICE-first stance.</p>
+                </div>
+                <div class="bg-dark-navy p-6 rounded-lg">
+                    <p class="font-teko text-6xl brand-cyan">02</p>
+                    <h3 class="font-roboto-condensed text-2xl mt-2 text-white">COMMUNITY BUILDING</h3>
+                    <p class="mt-2 text-sm">Unite disparate car clubs, tuning shops, and enthusiasts under one banner.</p>
+                </div>
+                <div class="bg-dark-navy p-6 rounded-lg">
+                    <p class="font-teko text-6xl brand-cyan">03</p>
+                    <h3 class="font-roboto-condensed text-2xl mt-2 text-white">MARKET TESTING</h3>
+                    <p class="mt-2 text-sm">Gather invaluable data on audience demographics, spending habits, and future interest.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Timeline -->
+        <section class="mb-20">
+            <h2 class="font-roboto-condensed text-4xl text-center mb-10 text-white tracking-wider">EVENT SCHEDULE</h2>
+            <div class="relative border-l-4 border-cyan ml-6">
+                <!-- Timeline Item -->
+                <div class="mb-10 ml-10">
+                    <div class="absolute -left-5 -top-1.5 h-8 w-8 rounded-full bg-dark-navy border-4 border-cyan"></div>
+                    <p class="font-teko text-3xl brand-cyan">13:00 - GATES OPEN</p>
+                    <p class="font-roboto-condensed text-xl text-white">THE OASIS SHOWCASE</p>
+                    <p class="mt-1">Guests explore the car show, pop-ups, and drift paddock. Chill DJ set begins.</p>
+                </div>
+                <!-- Timeline Item -->
+                <div class="mb-10 ml-10">
+                    <div class="absolute -left-5 -top-1.5 h-8 w-8 rounded-full bg-dark-navy border-4 border-cyan"></div>
+                    <p class="font-teko text-3xl brand-cyan">16:30 - RACE WARS</p>
+                    <p class="font-roboto-condensed text-xl text-white">THE DRAGS BEGIN</p>
+                    <p class="mt-1">Category-based drag races commence with live commentary. Main DJ starts the Sundown Session.</p>
+                </div>
+                <!-- Timeline Item -->
+                <div class="mb-10 ml-10">
+                    <div class="absolute -left-5 -top-1.5 h-8 w-8 rounded-full bg-dark-navy border-4 border-cyan"></div>
+                    <p class="font-teko text-3xl brand-cyan">19:00 - HEADLINER</p>
+                    <p class="font-roboto-condensed text-xl text-white">LIVE CONCERT: TOON BODYSLAM</p>
+                    <p class="mt-1">Following the Race Wars awards, the main musical act takes the stage.</p>
+                </div>
+                 <!-- Timeline Item -->
+                <div class="mb-10 ml-10">
+                    <div class="absolute -left-5 -top-1.5 h-8 w-8 rounded-full bg-dark-navy border-4 border-cyan"></div>
+                    <p class="font-teko text-3xl brand-cyan">22:00 - EVENT END</p>
+                    <p class="font-roboto-condensed text-xl text-white">FINAL HOUR</p>
+                    <p class="mt-1">A high-energy closing DJ set concludes the night.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Revenue Strategy -->
+        <section class="mb-20">
+            <h2 class="font-roboto-condensed text-4xl text-center mb-10 text-white tracking-wider">COMMERCIAL STRATEGY</h2>
+            <div class="bg-dark-navy p-8 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-roboto-condensed text-3xl text-white mb-4">REVENUE BREAKDOWN</h3>
+                        <p class="mb-4">A diversified strategy targeting a total revenue of **~7.2M THB**. 70% of this is projected to come from direct car participation and premium ticketing, ensuring a strong, community-driven financial base.</p>
+                        <p class="font-teko text-5xl brand-cyan">7,200,000 THB</p>
+                        <p class="font-roboto-condensed text-xl text-white">ESTIMATED TOTAL REVENUE</p>
+                    </div>
+                    <div class="chart-container relative h-80 w-full">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Packages -->
+        <section class="mb-20">
+            <h2 class="font-roboto-condensed text-4xl text-center mb-10 text-white tracking-wider">GUEST PACKAGES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-dark-navy p-6 rounded-lg border-t-4 border-cyan">
+                    <h3 class="font-roboto-condensed text-2xl text-white">VVIP SUPERCAR PADDOCK</h3>
+                    <p class="font-teko text-4xl brand-cyan my-2">50,000 THB</p>
+                    <ul class="text-sm list-disc list-inside space-y-1">
+                        <li>Prime display for 2 cars in A/C marquee</li>
+                        <li>4 VIP Private Zone tickets</li>
+                        <li>Dedicated lounge & concierge service</li>
+                    </ul>
+                </div>
+                <div class="bg-dark-navy p-6 rounded-lg border-t-4 border-teal">
+                    <h3 class="font-roboto-condensed text-2xl text-white">EXHIBITOR PADDOCK</h3>
+                    <p class="font-teko text-4xl brand-teal my-2">20,000 THB</p>
+                    <ul class="text-sm list-disc list-inside space-y-1">
+                        <li>High-traffic display space for 2 cars</li>
+                        <li>4 General Admission tickets</li>
+                        <li>Ideal for brand exposure (tuning shops, etc.)</li>
+                    </ul>
+                </div>
+                <div class="bg-dark-navy p-6 rounded-lg border-t-4 border-teal">
+                    <h3 class="font-roboto-condensed text-2xl text-white">VIP PRIVATE ZONE</h3>
+                    <p class="font-teko text-4xl brand-teal my-2">3,000 THB</p>
+                    <ul class="text-sm list-disc list-inside space-y-1">
+                        <li>Exclusive A/C lounge access</li>
+                        <li>Private cocktail bar & premium concert viewing</li>
+                        <li>Paragon-standard private toilets</li>
+                    </ul>
+                </div>
+                <div class="bg-dark-navy p-6 rounded-lg border-t-4 border-teal">
+                    <h3 class="font-roboto-condensed text-2xl text-white">GENERAL ADMISSION</h3>
+                    <p class="font-teko text-4xl brand-teal my-2">500 THB</p>
+                    <ul class="text-sm list-disc list-inside space-y-1">
+                        <li>Full event entry</li>
+                        <li>Access to general areas & food stalls</li>
+                        <li>Concert viewing area</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center pt-8 mt-16 border-t-4 border-cyan">
+            <p class="font-roboto-condensed text-xl text-white">A BLUEPRINT FOR A SUCCESSFUL INAUGURAL EVENT</p>
+            <p class="brand-teal mt-1">CORSA CULTURA | CONFIDENTIAL</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const revenueData = {
+            labels: ['Sponsorships', 'GA Tickets', 'VVIP Paddock', 'Exhibitor Paddock', 'Vendor Booths', 'VIP Zone'],
+            datasets: [{
+                data: [2500000, 1500000, 1000000, 1000000, 600000, 600000],
+                backgroundColor: ['#66FCF1', '#45A29E', '#C5C6C7', '#a4b8b7', '#87ceeb', '#FFFFFF'],
+                borderColor: '#1F2833',
+                borderWidth: 4,
+                hoverOffset: 8
+            }]
+        };
+
+        const revenueChartConfig = {
+            type: 'doughnut',
+            data: revenueData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '60%',
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: '#0B0C10',
+                        titleFont: { family: "'Roboto Condensed', sans-serif", size: 16 },
+                        bodyFont: { family: "'Montserrat', sans-serif", size: 14 },
+                        padding: 12,
+                        cornerRadius: 4,
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                return tooltipItems[0].label;
+                            },
+                            label: function(context) {
+                                const value = context.parsed;
+                                return ' Revenue: ' + new Intl.NumberFormat('th-TH', { style: 'currency', currency: 'THB', minimumFractionDigits: 0 }).format(value);
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        window.onload = function() {
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            new Chart(ctx, revenueChartConfig);
+        };
+    </script>
+</body>
+</html>
